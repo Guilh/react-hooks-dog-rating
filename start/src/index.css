@@ -1,0 +1,110 @@
+body {
+  color: #384047;
+  background: #edeff0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 1.1em auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.card div {
+  overflow: hidden;
+  max-height: 180px;
+  margin-bottom: 1.85em;
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 1.85em;
+  margin-bottom: 0.15em;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+h3 {
+  color: #384047e9;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+ul {
+  padding: 0 0 0 1em;
+  margin-top: 0.85em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #222;
+  font-size: 1em;
+  margin-bottom: 1.85em;
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+  margin-top: -10%;
+}
+
+/* STAR RATING STYLES */
+.course--stars {
+  border: 0;
+  margin: 20px 0 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.course--stars li {
+  float: left;
+  list-style: none;
+  width: 20%;
+  max-width: 40px;
+  line-height: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.course--stars li:first-child {
+  margin-left: -2px;
+}
+
+.course--stars li:hover {
+  cursor: pointer;
+}
+
+.course--stars .star {
+  width: auto;
+  height: 100%;
+  fill: #3658a25f;
+}
+
+.course--stars .selected .star {
+  fill: #2d4f9a;
+}
+
+.course--reviews--form .course--stars {
+  margin-bottom: 10px;
+}

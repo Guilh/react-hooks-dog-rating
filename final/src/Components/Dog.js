@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StarRating from './StarRating';
 
-function Dog({ img }) {
+function Dog({ url }) {
   const [ rating, setRating ] = useState(0);
 
   const handleSetRating = (newRating) => {
@@ -15,10 +15,13 @@ function Dog({ img }) {
   return (
     <div className="card">
       <div>
-        <img src={img} alt='A random hound' />
+        <img src={url} alt='A random hound dog' />
       </div>
       <h3>Rating: {rating}</h3>
-      <StarRating rating={rating} onSetRating={handleSetRating} /> 
+      <StarRating 
+        rating={rating} 
+        setRating={handleSetRating}
+      /> 
     </div>
   );
 }

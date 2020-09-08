@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div className="container">
-      { data.map( (dog, index ) => <Dog img={dog} key={index} /> ) }
+      { data.map( (url, index ) => <Dog url={url} key={index} /> ) }
     </div>
   );
 }
